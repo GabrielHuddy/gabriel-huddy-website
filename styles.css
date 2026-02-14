@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+    display: flow-root; /* Prevent margin collapse with first child's top margin */
+
+    /* Overrides default box model to avoid scrollbars */
+    margin: 0;
+    padding: 0;
+
+    /* Global font settings */
+    font: 1.0em sans-serif;
+    color: #222222;
+}
+
+.container {
+    max-width: min(60rem, calc(100% - 4em));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15em;
+    @media (width <= 50rem) or (height <= 40rem) {
+        margin-top: 2em;
+    }
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    color: #777777;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+img.headshot {
+    float: left;
+    margin-right: 2em;
+    border-radius: 50%;
+    max-width: 85%;
+
+    @media (width <= 50rem) {
+        float: none;
+        display: block;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2fabe0;
+}
+
+a:hover {
+    color: #7ad3f9;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.5em;
+    width: 100vw;
+    text-align: center;
+}
+
+footer a {
+    font-weight: normal;
+}
