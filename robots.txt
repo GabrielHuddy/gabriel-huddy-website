@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /coolicons/*
+Disallow: /favicon-ico-source/*
+
